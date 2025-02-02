@@ -23,7 +23,11 @@ def update_saldo(request):
     return JsonResponse({'status': 'success'})
 
 def playlists(request):
-        return render(request, 'core/playlists.html')
+    links = siteBase.objects.all()
+    context = {
+        'siteBase': links  # Correto: chave é o nome da variável no template
+    }
+    return render(request, 'core/playlists.html', context)
 
 def bonus(request):
     

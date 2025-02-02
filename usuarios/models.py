@@ -60,3 +60,11 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     class Meta:
         verbose_name = _('user')
         verbose_name_plural = _('users')
+
+class siteBase(models.Model):
+    link_checkout = models.CharField(_(""), max_length=100)
+
+    class Meta:
+        verbose_name = _('Link_Checkout')
+        verbose_name_plural = _('Links')
+    
