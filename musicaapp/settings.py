@@ -39,7 +39,7 @@ DATABASES = {
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['http://localhost']
+CSRF_TRUSTED_ORIGINS = ['https://app.novidadeagora.com/*']
 
 
 AUTH_USER_MODEL = 'usuarios.CustomUser'
