@@ -64,7 +64,9 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
 class siteBase(models.Model):
     link_checkout = models.CharField(max_length=100)
 
+    def __str__(self):
+        return str(self.link_checkout)  # Certifique-se de que sempre retorna uma string
+
     class Meta:
-        verbose_name = _('Link_Checkout')
-        verbose_name_plural = _('Links')
-    
+        verbose_name = "Link Checkout"  # Use texto direto aqui
+        verbose_name_plural = "Links"
