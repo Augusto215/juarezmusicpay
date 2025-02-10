@@ -66,7 +66,3 @@ class siteBase(models.Model):
 
     def __str__(self):
         return str(self.link_checkout)  # Certifique-se de que sempre retorna uma string
-
-    class Meta:
-        verbose_name = "Link Checkout"  # Use texto direto aqui
-        verbose_name_plural = "Links"
