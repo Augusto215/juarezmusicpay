@@ -62,7 +62,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
         verbose_name_plural = _('users')
 
 class siteBase(models.Model):
-    link_checkout = models.CharField(_(""), max_length=100)
+    link_checkout = models.CharField(max_length=100)
 
     class Meta:
         verbose_name = _('Link_Checkout')
